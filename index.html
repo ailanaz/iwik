@@ -31,19 +31,19 @@
   }
 
   .logo-stack {
-    width: min(300px, 55vw);
+    width: min(460px, 75vw);
   }
 
   /* top portion of the logo image — the bulb and heart */
   .bulb-crop {
     position: relative;
     width: 100%;
-    aspect-ratio: 1 / 0.665;
+    aspect-ratio: 1 / 0.802;
     overflow: hidden;
 
     opacity: 0;
-    transform: translateY(-140px);
-    animation: dropIn 1.6s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+    transform: translateY(-260px);
+    animation: dropIn 1.9s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
   }
 
   .bulb-crop img {
@@ -58,12 +58,12 @@
   .text-crop {
     position: relative;
     width: 100%;
-    aspect-ratio: 1 / 0.335;
+    aspect-ratio: 1 / 0.198;
     overflow: hidden;
 
     opacity: 0;
     animation: fadeIn 1.8s ease-out forwards;
-    animation-delay: 1.1s;
+    animation-delay: 1.3s;
   }
 
   .text-crop img {
@@ -77,9 +77,9 @@
   @keyframes dropIn {
     0% {
       opacity: 0;
-      transform: translateY(-140px);
+      transform: translateY(-260px);
     }
-    60% {
+    50% {
       opacity: 1;
     }
     100% {
