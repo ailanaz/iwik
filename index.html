@@ -92,6 +92,23 @@
     from { opacity: 0; }
     to { opacity: 1; }
   }
+
+  .mission {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0 20px 80px;
+    text-align: center;
+
+    opacity: 0;
+    animation: fadeIn 1.8s ease-out forwards;
+    animation-delay: 3.1s;
+  }
+
+  .mission p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--black);
+  }
 </style>
 </head>
 <body>
@@ -105,6 +122,10 @@
         <img src="iwik-logo.png" alt="iwik — I Wish I Knew">
       </div>
     </div>
+  </section>
+
+  <section class="mission">
+    <p>I Wish I Knew is a federal 501(c)(3) public charity built on the foundational mission of doing good, spreading good, and fostering community connection. We create, support, and deploy projects designed to uplift individuals and inspire universal reciprocity.</p>
   </section>
 
 </body>
