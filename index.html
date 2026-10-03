@@ -116,9 +116,58 @@
   color: var(--black);
 }
 
+/* thin red line between mission and core activities */
+.iwik-divider {
+  width: 33.33%;
+  margin: 0 auto 2.5rem;
+  border: 0;
+  border-top: 1px solid var(--red);
+  opacity: 0;
+  animation: fadeIn 1.2s ease-out forwards;
+  animation-delay: 2.2s;
+}
+
+.iwik-activities {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 20px 60px;
+  color: var(--black);
+  opacity: 0;
+  animation: fadeIn 1.2s ease-out forwards;
+  animation-delay: 2.4s;
+}
+
+.iwik-activities h2 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.iwik-activities p,
+.iwik-activities li {
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.iwik-activities ul {
+  padding-left: 1.25rem;
+}
+
+.iwik-activities li {
+  margin-bottom: 0.75rem;
+}
+
+.iwik-activities .iwik-note {
+  font-size: 0.9rem;
+  font-style: italic;
+  opacity: 0.8;
+  margin-top: 1.5rem;
+}
+
 footer {
   text-align: center;
-  padding: 0 -5px 40px;
+  padding: 0 5px 40px;
   font-size: 0.9rem;
   color: var(--black);
   transform: translateY(-15px);
@@ -157,9 +206,27 @@ footer a:hover {
     display: none;
   }
 
+  .iwik-activities {
+    padding: 0 16px 40px;
+  }
+
+  .iwik-activities p,
+  .iwik-activities li {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
   footer {
     padding: 0 5px 30px;
     transform: translateY(-15px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bulb-crop, .text-crop, .mission, .iwik-divider, .iwik-activities {
+    animation: none;
+    opacity: 1;
+    transform: none;
   }
 }
 </style>
@@ -182,6 +249,20 @@ footer a:hover {
   I Wish I Knew is a philanthropic charity that exists to create and support projects that provide<br>
 knowledge, resources, and meaningful assistance to those who can benefit from them.<br class="mobile-break"> Through our work, we hope to empower individuals, inspire communities, <br>
   and create greater capacity and desire to help others,  <br class="mobile-break"> ultimately generating a ripple effect that contributes to a better world for everyone.
+</p>
+</section>
+
+<hr class="iwik-divider">
+
+<section class="iwik-activities">
+  <h2>Our Core Activities</h2>
+  <p>To turn this mission into lasting community impact, I Wish I Knew structures its operations around the development and execution of targeted charitable projects across three key pillars:</p>
+  <ul>
+    <li><strong>Knowledge Distribution:</strong> Deploying educational and instructional materials to foster personal growth and community development.</li>
+    <li><strong>Resource Provision &amp; Mentorship:</strong> Delivering tangible tools, essential supplies, and structural mentorship frameworks to empower individuals long-term.</li>
+    <li><strong>Direct Meaningful Assistance:</strong> Creating localized assistance initiatives designed to generate a scalable ripple effect of mutual aid.</li>
+  </ul>
+  <p class="iwik-note">Note: As an organization, we coordinate our community outreach and administrative initiatives directly through our formal corporate channels and official web presence rather than consumer social media networks.</p>
 </section>
 
 <footer>
